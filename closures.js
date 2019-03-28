@@ -5,5 +5,8 @@ function counter(){
     }
 }
 
+count1 = counter(); 
+count1(); // 1
+count1(); // 2
 
 
