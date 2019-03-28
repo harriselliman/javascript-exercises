@@ -9,4 +9,9 @@ count1 = counter();
 count1(); // 1
 count1(); // 2
 
+count2 = counter();
+count2(); //1
+count2(); //2
+
+count1(); //3
 
