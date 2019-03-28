@@ -29,3 +29,8 @@ function classRoom(){
         }
     }
 }
+
+course1 = classRoom();
+course1.getInstructors(); // ["Oliver", "Teresa"]
+course1.addInstructor("Michael"); // ["Oliver", "Teresa", "Michael"]
+course1.getInstructors(); // ["Oliver", "Teresa", "Michael"]
