@@ -15,3 +15,17 @@ count2(); //2
 
 count1(); //3
 
+///////////////////////////////////////
+
+function classRoom(){
+    var instructors = ["Oliver", "Teresa"]
+    return {
+        getInstructors: function(){
+            return instructors;
+        },
+        addInstructor: function(instructor){
+            instructors.push(instructor);
+            return instructors;
+        }
+    }
+}
