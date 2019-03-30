@@ -36,3 +36,18 @@ const increment = (function() {
   })();
   console.log(increment(5, 2)); // returns 7
   console.log(increment(5)); // returns 6
+
+
+
+  //Use the Rest Operator with Function Parameters
+  //modify sum function to use rest operator so it works with any number of parameters
+
+  const sum = (function() {
+    "use strict";
+    return function sum(...args) {
+      return args.reduce((a, b) => a + b, 0);
+    };
+  })();
+  
+  console.log(sum(1, 2, 3)); // 6
+  console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)); //55
