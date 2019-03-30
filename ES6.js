@@ -34,28 +34,28 @@ const increment = (function() {
       return number + value;
     };
   })();
-  console.log(increment(5, 2)); // returns 7
-  console.log(increment(5)); // returns 6
+console.log(increment(5, 2)); // returns 7
+console.log(increment(5)); // returns 6
 
 
 
-  //Use the Rest Operator with Function Parameters
-  //modify sum function to use rest operator so it works with any number of parameters
+//Use the Rest Operator with Function Parameters
+//modify sum function to use rest operator so it works with any number of parameters
 
-  const sum = (function() {
-    "use strict";
-    return function sum(...args) {
-      return args.reduce((a, b) => a + b, 0);
-    };
-  })();
+const sum = (function() {
+  "use strict";
+  return function sum(...args) {
+   return args.reduce((a, b) => a + b, 0);
+  };
+})();
   
-  console.log(sum(1, 2, 3)); // 6
-  console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)); //55
+console.log(sum(1, 2, 3)); // 6
+console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)); //55
 
 
   
-  //Use the Spread Operator to Evaluate Arrays In-Place
-  //Copy all contents of arr1 into another array arr2 using the spread operator
+//Use the Spread Operator to Evaluate Arrays In-Place
+//Copy all contents of arr1 into another array arr2 using the spread operator
 
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
 let arr2;
