@@ -4,7 +4,9 @@ const myConcat = (arr1, arr2) => {
     return arr1.concat(arr2);
   }
   
-  console.log(myConcat([1,2], [3,4,5]));
+console.log(myConcat([1,2], [3,4,5]));
+
+
 
 //write higher order arrow functions
 //use arrow function syntax to compute the square of only the positive integers in the array and store the new array in the variable squaredIntegers
@@ -20,3 +22,17 @@ const squareList = (arr) => {
 
 const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers);
+
+
+
+//set Default Parameters for Your Functions
+//modify increment by adding default parameter so it adds 1 to number if value is not specified.
+
+const increment = (function() {
+    "use strict";
+    return function increment(number, value = 1) {
+      return number + value;
+    };
+  })();
+  console.log(increment(5, 2)); // returns 7
+  console.log(increment(5)); // returns 6
