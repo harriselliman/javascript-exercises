@@ -180,3 +180,14 @@ function makeList(arr) {
  *   `<li class="text-warning">linebreak</li>` ]
  **/
 const resultDisplayArray = makeList(result.failure);
+
+
+
+//Write Concise Object Literal Declarations Using Simple Fields
+//Use simple fields with object literals to create and return a Person object
+
+const createPerson = (name, age, gender) => {
+  "use strict";
+  return {name, age, gender};
+};
+console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
