@@ -191,3 +191,19 @@ const createPerson = (name, age, gender) => {
   return {name, age, gender};
 };
 console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
+
+
+
+//Write Concise Declarative Functions with ES6
+//Refactor the function setGear inside the object bicycle 
+
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    "use strict";
+    this.gear = newGear;
+  }
+};
+
+bicycle.setGear(3);
+console.log(bicycle.gear); //3
