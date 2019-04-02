@@ -23,3 +23,14 @@ function mixedNumbers(arr) {
 }
   
 console.log(mixedNumbers(['IV', 5, 'six'])); //["I", 2, "three", "IV", 5, "six", 7, "VIII", 9]
+
+
+
+//Remove Items from an Array with pop() and shift()
+function popShift(arr) {
+    let popped = arr.pop(); 
+    let shifted = arr.shift(); 
+    return [shifted, popped];
+}
+  
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
