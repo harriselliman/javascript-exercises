@@ -12,3 +12,14 @@ let yourArray = [1, true, 'three', 4, false, {five: 5, six: "six"},[7, "eight", 
 let myArray = ["a", "b", "c", "d"];
 myArray[1] = "better upgrade this b to an a";
 console.log(myArray);
+
+
+
+//Add Items to an Array with push() and unshift()
+function mixedNumbers(arr) {
+    arr.unshift('I', 2, 'three');
+    arr.push(7, 'VIII', 9);
+    return arr;
+}
+  
+console.log(mixedNumbers(['IV', 5, 'six'])); //["I", 2, "three", "IV", 5, "six", 7, "VIII", 9]
