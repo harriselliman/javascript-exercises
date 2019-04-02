@@ -45,3 +45,6 @@ function sumOfTen(arr) {
 }
   
 console.log(sumOfTen([2, 5, 1, 5, 2, 1]));
+
+
+
