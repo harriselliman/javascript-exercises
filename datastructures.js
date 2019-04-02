@@ -16,6 +16,7 @@ console.log(myArray);
 
 
 //Add Items to an Array with push() and unshift()
+
 function mixedNumbers(arr) {
     arr.unshift('I', 2, 'three');
     arr.push(7, 'VIII', 9);
@@ -27,6 +28,7 @@ console.log(mixedNumbers(['IV', 5, 'six'])); //["I", 2, "three", "IV", 5, "six",
 
 
 //Remove Items from an Array with pop() and shift()
+
 function popShift(arr) {
     let popped = arr.pop(); 
     let shifted = arr.shift(); 
@@ -39,6 +41,7 @@ console.log(popShift(['challenge', 'is', 'not', 'complete']));
 
 //Remove Items Using splice()
 //Modify the function, using splice(), so that it returns a value of 10
+
 function sumOfTen(arr) {
     arr.splice(1, 2);
     return arr.reduce((a, b) => a + b);
@@ -50,6 +53,7 @@ console.log(sumOfTen([2, 5, 1, 5, 2, 1]));
 
 //Add Items Using splice()
 //Modify the function using splice() to remove the first two elements of the array and add 'DarkSalmon' and 'BlanchedAlmond' in their respective places.
+
 function htmlColorNames(arr) {
     arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
     return arr;
