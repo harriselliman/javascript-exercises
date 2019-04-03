@@ -87,3 +87,16 @@ function copyMachine(arr, num) {
 console.log(copyMachine([true, false, true], 2));
 console.log(copyMachine(["He's", "Virgil", "Van", "Dijk"], 2));
 console.log(copyMachine(["hi", "bye"], 10));
+
+
+
+//Combine Arrays with the Spread Operator
+//modify the function using the spread operator so that it returns the array ['learning', 'to', 'code', 'is', 'fun']
+
+function spreadOut() {
+    let fragment = ['to', 'code'];
+    let sentence = ['learning', ...fragment, 'is', 'fun'];
+    return sentence;
+}
+  
+console.log(spreadOut());
