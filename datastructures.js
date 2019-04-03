@@ -100,3 +100,27 @@ function spreadOut() {
 }
   
 console.log(spreadOut());
+
+
+
+//Check For The Presence of an Element With indexOf()
+//Modify the function using indexOf() so that it returns true if the passed element exists on the array, and false if it does not
+
+//method 1
+
+function quickCheck1(arr, elem) {
+    if(arr.indexOf(elem) != -1){
+        return true;
+    }
+    return false;
+}
+
+console.log(quickCheck1(['squash', 'onions', 'shallots'], 'mushrooms')); //false
+
+//method 2
+
+function quickCheck2(arr, elem){
+    return arr.indexOf(elem) != -1 ? true : false;
+}
+
+console.log(quickCheck2([19, 9, 1995], 19)); //true
