@@ -142,3 +142,30 @@ function filteredArray(arr, elem) {
   
 console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3)); //[]
 console.log(filteredArray([["Mo", "Salah"],["running", "down"],[1, 2, 3],["the", "wing"]], 1));
+
+
+
+//Create complex multi-dimensional arrays
+
+let myNestedArray = [
+    ['unshift', 1, 2, 3, 'complex', 'nested', 'second'],
+    [
+      ['loop', 'shift'], ['deep'], [6, 7, 1000]
+    ],
+    [
+      [
+        ['concat', false, true], ['deeper'], ['spread', 'array']
+      ],
+    ],
+    [
+      [
+        ['mutate', 1327.98, 
+          ['deepest']
+        ]
+      ]
+    ]
+  ];
+  
+  console.log(myNestedArray[1][1][0]); // deep
+  console.log(myNestedArray[2][0][1][0]); // deeper
+  console.log(myNestedArray[3][0][0][2][0]);// deepest
