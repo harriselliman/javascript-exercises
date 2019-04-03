@@ -243,3 +243,36 @@ delete foods.plums;
 delete foods['strawberries'];
   
 console.log(foods);
+
+
+
+//Check if an Object has a Property
+//write this function so that it returns true only if the users object contains all four names, Alan, Jeff, Sarah, and Ryan, as keys, and false otherwise
+
+let users = {
+    Alan: {
+      age: 27,
+      online: true
+    },
+    Jeff: {
+      age: 32,
+      online: true
+    },
+    Sarah: {
+      age: 48,
+      online: true
+    },
+    Ryan: {
+      age: 19,
+      online: true
+    }
+};
+  
+function isEveryoneHere(obj) {
+    if(obj.hasOwnProperty("Alan", "Jeff", "Sarah", "Ryan")){
+        return true;
+    }
+    return false;
+}
+  
+console.log(isEveryoneHere(users));
