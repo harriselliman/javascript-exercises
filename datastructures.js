@@ -251,20 +251,20 @@ console.log(foods);
 
 let users = {
     Alan: {
-      age: 27,
-      online: true
+        age: 27,
+        online: true
     },
     Jeff: {
-      age: 32,
-      online: true
+        age: 32,
+        online: true
     },
     Sarah: {
-      age: 48,
-      online: true
+        age: 48,
+        online: true
     },
     Ryan: {
-      age: 19,
-      online: true
+        age: 19,
+        online: true
     }
 };
   
@@ -284,29 +284,29 @@ console.log(isEveryoneHere(users));
 
 let users = {
     Alan: {
-      age: 27,
-      online: false
+        age: 27,
+        online: false
     },
     Jeff: {
-      age: 32,
-      online: true
+        age: 32,
+        online: true
     },
     Sarah: {
-      age: 48,
-      online: false
+        age: 48,
+        online: false
     },
     Ryan: {
-      age: 19,
-      online: true
+        age: 19,
+        online: true
     }
 };
   
 function countOnline(obj) {
     let count = 0;
     for(let user in users){
-      if(users[user].online === true) {
-        count += 1;
-      }
+        if(users[user].online === true) {
+            count += 1;
+        }
     }
     return count;
 }
@@ -320,24 +320,24 @@ console.log(countOnline(users)); //2
 
 let users = {
     Alan: {
-      age: 27,
-      online: false
+        age: 27,
+        online: false
     },
     Jeff: {
-      age: 32,
-      online: true
+        age: 32,
+        online: true
     },
     Sarah: {
-      age: 48,
-      online: false
+        age: 48,
+        online: false
     },
     Ryan: {
-      age: 19,
-      online: true
+        age: 19,
+        online: true
     }
 };
   
-  function getArrayOfUsers(obj) {
+function getArrayOfUsers(obj) {
     return Object.keys(obj);
 }
   
@@ -352,19 +352,19 @@ let user = {
     name: 'Kenneth',
     age: 28,
     data: {
-      username: 'kennethCodesAllDay',
-      joinDate: 'March 26, 2016',
-      organization: 'freeCodeCamp',
-      friends: [
-        'Sam',
-        'Kira',
-        'Tomo'
-      ],
-      location: {
-        city: 'San Francisco',
-        state: 'CA',
-        country: 'USA'
-      }
+        username: 'kennethCodesAllDay',
+        joinDate: 'March 26, 2016',
+        organization: 'freeCodeCamp',
+        friends: [
+            'Sam',
+            'Kira',
+            'Tomo'
+        ],
+        location: {
+            city: 'San Francisco',
+            state: 'CA',
+            country: 'USA'
+        }
     }
 };
   
